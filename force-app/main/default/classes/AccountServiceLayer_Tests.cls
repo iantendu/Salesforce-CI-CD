@@ -15,6 +15,7 @@ private inherited sharing class AccountServiceLayer_Tests {
     @isTest
     static void justWriteALogStatementPositive2() {
         Test.startTest();
+        System.debug('The');
         AccountServiceLayer.justWriteALogStatement('Hello Stream Viewers');
         Test.stopTest();
 

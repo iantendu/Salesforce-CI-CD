@@ -12,6 +12,19 @@ private inherited sharing class AccountServiceLayer_Tests {
             'Expected the log to match the input parameter.'
         );
     }
+    @isTest
+    static void justWriteALogStatementPositive2() {
+        Test.startTest();
+        AccountServiceLayer.justWriteALogStatement('Hello Stream Viewers');
+        Test.stopTest();
+
+        System.Assert.areEqual(
+            'Hello Stream Viewers',
+            AccountServiceLayer.didExecuteMethod,
+            'Expected the log to match the input parameter.'
+        );
+    }
+
 
     @isTest
     static void testChangeShippingStreetNegativeNoEditAccess() {

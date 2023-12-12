@@ -27,7 +27,7 @@ public with sharing class AccountServiceLayer {
         AccountServiceLayer.didExecuteMethod = toLog;
         System.debug(
             LoggingLevel.INFO,
-            'Account id = and log statement = ' + toLog
+            'Account id = and log statement :::= ' + toLog
         );
     }
 
